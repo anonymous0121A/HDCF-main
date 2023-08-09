@@ -34,7 +34,7 @@ python dhcf.py --data ijcai --lr 1e-4 --graphSampleN 20000 --testgraphSampleN 40
 
 
 # Important Arguments
-reg: It is the weight for weight-decay regularization. We tune this hyperparameter from the set {1e-2, 1e-3, 1e-4, 1e-5}.
-ssl_reg and sslGlobal_reg:They are the weights for weight-decay regularization for the node-level and graph-level contrastive objectives. We tune this hyperparameter from the set {1e-4, 1e-5, 1e-6, 1e-7}..
-graphSampleN: This hyperparameter denotes the number of subgraph nodes in the train period. Recommended values are {10000, 15000, 20000, 25000, 30000}.
-testgraphSampleN: This hyperparameter denotes the number of subgraph nodes in the testing. Recommended values are {30000, 35000, 40000, 45000, 50000}.
+-reg: It is the weight for weight-decay regularization. We tune this hyperparameter from the set {1e-2, 1e-3, 1e-4, 1e-5}.
+-ssl_reg and sslGlobal_reg:They are the weights for weight-decay regularization for the node-level and graph-level contrastive objectives. We tune this hyperparameter from the set {1e-4, 1e-5, 1e-6, 1e-7}.
+-graphSampleN: This hyperparameter denotes the number of subgraph nodes in the train period. Recommended values are {10000, 15000, 20000, 25000, 30000}.
+-testgraphSampleN: This hyperparameter denotes the number of subgraph nodes in the testing. Recommended values are {30000, 35000, 40000, 45000, 50000}.
