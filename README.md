@@ -1,4 +1,4 @@
-# DHCF--Disentangled-Heterogeneous-Collaborative-Filtering-with-Contrastive-Adaptation
+# DHCF--Disentangled-Heterogeneous-Collaborative-Filtering
 
 # Environment
 The implementation for DHCF is under the following development environment:
