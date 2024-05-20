@@ -6,7 +6,7 @@ import Utils.TimeLogger as logger
 from Utils.TimeLogger import log
 import Utils.NNLayers as NNs
 from Utils.NNLayers import FC, Regularize, Activate, Dropout, Bias, getParam, defineParam, defineRandomNameParam
-from DataHandler_dhcf import negSamp, transpose, DataHandler, transToLsts
+from DataHandler_hdcf import negSamp, transpose, DataHandler, transToLsts
 import tensorflow as tf
 from tensorflow.core.protobuf import config_pb2
 import pickle
