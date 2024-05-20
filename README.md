@@ -1,7 +1,7 @@
-# DHCF--Disentangled-Heterogeneous-Collaborative-Filtering
+# HDCF--Disentangled-Heterogeneous-Collaborative-Filtering
 
 # Environment
-The implementation for DHCF is under the following development environment:
+The implementation for HDCF is under the following development environment:
 - python=3.8.4
 - tensorflow=1.14
 - numpy=1.22.3
@@ -9,7 +9,7 @@ The implementation for DHCF is under the following development environment:
 
 
 # Datasets
-We utilize three datasets for evaluating DHCF: Beibei, Tmall and IJCAI. We adopt two representative metrics for evaluating the accuracy of top-N item recommendations: Hit Ratio (HR@N) and Normalized Discounted Cumulative Gain (NDCG@N). Following the leave-one-out evaluation strategy, all negative samples are applied to construct the test set with the users’ all positive interactions under the target behavior type. 
+We utilize three datasets for evaluating HDCF: Beibei, Tmall and IJCAI. We adopt two representative metrics for evaluating the accuracy of top-N item recommendations: Hit Ratio (HR@N) and Normalized Discounted Cumulative Gain (NDCG@N). Following the leave-one-out evaluation strategy, all negative samples are applied to construct the test set with the users’ all positive interactions under the target behavior type. 
 | Datasets | # Users | # Items | # Interactions	| Interaction Density |
 | :-----| ----: | :----: | :----: | :----: |
 | Beibei | 21716 | 7977 | 282860 | 0.1633% |
@@ -21,15 +21,15 @@ We utilize three datasets for evaluating DHCF: Beibei, Tmall and IJCAI. We adopt
 Please unzip the Tmall and IJCAI dataset first. Also you need to create the History/ and the Models/ directories. Switch the working directory to methods/DHCF/. The command lines to train it on the three datasets are as below. The un-specified hyperparameters in the commands are set as default. Because the number of Beibei dataset is small and super imbalanced, it don't need to sample small graph and get some parameters changed. 
 - Beibei
 ```
-python dhcf_bei.py --data beibei --reg 1 --batch 32 
+python hdcf_bei.py --data beibei --reg 1 --batch 32 
 ```
 - Tmall
 ```
-python dhcf.py --data tmall --ssl_reg 1e-6 --reg 5e-5 --keepRate 0.4 --graphSampleN 20000 --testgraphSampleN 40000
+python hdcf.py --data tmall --ssl_reg 1e-6 --reg 5e-5 --keepRate 0.4 --graphSampleN 20000 --testgraphSampleN 40000
 ```
 - IJCAI
 ```
-python dhcf.py --data ijcai --lr 1e-4 --graphSampleN 20000 --testgraphSampleN 40000
+python hdcf.py --data ijcai --lr 1e-4 --graphSampleN 20000 --testgraphSampleN 40000
 ```
 
 
