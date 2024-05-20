@@ -1,4 +1,4 @@
-# HDCF--Disentangled-Heterogeneous-Collaborative-Filtering
+# HDCF--Heterogeneous-Disentangled-Collaborative-Filtering
 
 # Environment
 The implementation for HDCF is under the following development environment:
