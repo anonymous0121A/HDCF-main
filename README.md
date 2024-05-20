@@ -18,7 +18,7 @@ We utilize three datasets for evaluating HDCF: Beibei, Tmall and IJCAI. We adopt
 
 
 # Usage
-Please unzip the Tmall and IJCAI dataset first. Also you need to create the History/ and the Models/ directories. Switch the working directory to methods/HDCF/. The command lines to train it on the three datasets are as below. The un-specified hyperparameters in the commands are set as default. Because the number of Beibei dataset is small and super imbalanced, it don't need to sample small graph and get some parameters changed. 
+Please unzip the Tmall and IJCAI dataset first. Also you need to create the History/ and the Models/ directories. Switch the working directory to methods/DHCF/. The command lines to train it on the three datasets are as below. The un-specified hyperparameters in the commands are set as default. Because the number of Beibei dataset is small and super imbalanced, it don't need to sample small graph and get some parameters changed. 
 - Beibei
 ```
 python hdcf_bei.py --data beibei --reg 1 --batch 32 
